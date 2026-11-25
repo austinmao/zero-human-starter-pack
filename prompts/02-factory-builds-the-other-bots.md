@@ -19,6 +19,7 @@ For each bot:
 
 Each bot keeps to its own job. Only the Code bot writes code or changes GitHub. Save every file to my-agents through the Code bot, not yourself.
 Do not ask for passwords. If a bot needs an account connected, tell me where to click and I will do it myself.
+If I ask for one of the optional packs (Growth, Operations or Life, listed in bots/TASKS.md), build those bots the same way, one at a time, and use prompts/14-add-more-bots.md for the order. For the Life pack, update the Code bot first.
 After all six, give me a table: bot, what it owns, accounts, what is left to do.
 Then tell me to open a new chat and run prompts/09-check-my-bots.md.
 ```

@@ -11,7 +11,7 @@ Rules for the whole run:
 - If a step fails, mark it "failed", say why in one line, and carry on. Never loop.
 
 ## Phase 1: Check the team
-Ask each of the 8 bots in turn (Factory, Code, Email, Calendar, Task, Messaging, Drive, and yourself): "Say your name, what you own, and whether you ever write code or change GitHub." Also ask Email, Messaging and Calendar: "Do you run the humanizer on every draft? Do you use voice cards?" Expected: only Code says yes to code, and the other three say yes to the humanizer. Email and Messaging also say yes to voice cards. Mark each bot ok, missing, or "duty problem". Tell the user what to fix, if anything.
+Ask each of the core 8 bots in turn (Factory, Code, Email, Calendar, Task, Messaging, Drive, and yourself): "Say your name, what you own, and whether you ever write code or change GitHub." Also ask Email, Messaging and Calendar: "Do you run the humanizer on every draft? Do you use voice cards?" Expected: only Code says yes to code, and the other three say yes to the humanizer. Email and Messaging also say yes to voice cards. Mark each bot ok, missing, or "duty problem". Tell the user what to fix, if anything.
 
 ## Phase 2: Learn the accounts
 Ask the user for their name, time zone, and the accounts they want connected (email, calendar, drive, tasks, messaging). Give each an alias such as `work-google`. Fill in the "My accounts" table in your instructions. Show it and wait for OK. (More detail: `https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main/prompts/05-connect-more-accounts.md`.)
@@ -32,3 +32,11 @@ Follow `https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main
 3. Hand over to the user. Say: "Setup is done. Ask me for something real. For example: check my inbox, summarize my messages, learn how I write emails, or ask the Factory to build a new bot." Offer the examples at `https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main/prompts/13-things-to-ask-your-orchestrator.md`. Do not run any of them until the user picks one.
 4. For each request after that, say which bot you hand it to. Read first, and ask before you send, delete, unsubscribe or save.
 5. Offer the optional next step: moving old Claude and ChatGPT work across (`knowledge/HOW-TO-EXPORT.md`).
+
+## Phase 6: More bots (optional, only when the user asks)
+Run this after the user pastes `https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main/prompts/14-add-more-bots.md` for a pack and the browser agent tells you "Pack X is in. Run Phase 6."
+1. Offer the packs the user has not added yet: Growth (A), Operations (B), Life (C). Tell them to paste prompt 14 into a browser agent for the one they want. Never create bots yourself from this phase.
+2. For the pack that just arrived, ask each new bot in turn: "Say your name, what you own, and whether you write code or change GitHub." Mark each ok, missing or "duty problem". Pack C: also ask each bot "Where does your data live, and what do you say first?" Expected: its own memory and `private/<folder>/`, never GitHub or the backup, plus a plain disclaimer.
+3. Read the new bot's connections in `bots/<folder>/INSTRUCTIONS.md`. Ask the user only for the ones they want: a notes tool, web analytics, a social account, the accounting tool, a video meeting account, the email platform, a contact list. They log in themselves.
+4. After each connection, run the read-only test for it (`prompts/11-read-only-connection-test.md`, items 8 to 14). Pack C bots are not tested this way: they have no data to read.
+5. Give one table: new bot, connection, result, what is left. Never send, post, pay or delete as part of this phase.

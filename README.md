@@ -19,6 +19,8 @@ You do not need to be technical. If you have used ChatGPT or Claude, you can do 
 
 Every bot can be connected to **more than one account** (for example, two Google calendars).
 
+**Optional packs.** When the core 8 work, add more bots one pack at a time with `prompts/14-add-more-bots.md`: Growth (12 bots), Operations (9) and Life (9). Life bots keep their data private and out of the GitHub backup.
+
 ## Quick start
 
 1. Click **Use this template** at the top of this page and create a **private** repo called `my-agents`. Everything you build is backed up there.

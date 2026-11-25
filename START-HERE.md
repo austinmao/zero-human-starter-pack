@@ -45,5 +45,8 @@ Then, once the exports arrive:
 4. **Fill the gaps for tier 1 projects.** Run `prompts/03-knowledge-dump-chatgpt.md` or `prompts/03-knowledge-dump-claude.md` inside the project, and copy its instructions by hand.
 5. **Save it.** `prompts/04-push-dump-to-github.md`. Only handoff notes and skills go to GitHub, never the raw exports.
 
+## 8. Add more bots (optional, 20 minutes per pack)
+When the core 8 work, you can add more, one pack at a time: Growth (marketing, sales, social and more), Operations (customer care, finance prep, legal admin and more) and Life (friend, journal, workout, health and more). Paste `prompts/14-add-more-bots.md` into a browser agent and pick a pack. The agent shows you the list and stops at "OK to create?". Life bots keep their data private and never back it up to GitHub.
+
 ## If something goes wrong
 Paste the error message into Claude or ChatGPT together with the step you were on. Nothing in this pack is permanent, so you can always start a step again.

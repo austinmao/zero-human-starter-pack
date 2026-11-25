@@ -18,7 +18,7 @@ Rules:
 - Keep your replies short. Never paste a bot's full text into the chat more than once.
 
 Step 1. Open https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main/bots/TASKS.md
-Copy its table into your reply as your checklist. After every change, show me the updated checklist.
+Copy the first table (the core 8 bots) into your reply as your checklist. Ignore the "Optional packs" section. After every change, show me the updated checklist.
 
 Step 2. Prepare all 8 (do not touch Grok Bot yet).
 For each bot, fetch its INSTRUCTIONS.md from the address in TASKS.md and replace [YOUR NAME] and [ORCHESTRATOR NAME]. Change nothing else.

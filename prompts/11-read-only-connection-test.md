@@ -22,6 +22,13 @@ Ask each bot to run its own check and report back:
 5. Messaging, WhatsApp: run `wacli doctor` and `wacli --read-only --json messages list --limit 3`. Show only the chat names and times.
 6. Messaging, iMessage: list the names and times of the 3 newest conversations. If the Mac is asleep or iMessage is not turned on in the desktop app, say so.
 7. Code: read the list of files in my private my-agents repo. Do not write anything.
+8. Only if the Sales or Customer care bot exists, contact list or CRM: the number of contacts, and the names of the 3 newest. No notes or messages.
+9. Only if the Analytics bot exists, web analytics: yesterday's visit count. Nothing else.
+10. Only if the Social bot exists, each social account: the first line and date of my 3 newest posts.
+11. Only if the Finance prep bot exists, accounting tool: the number of open invoices and the number of open bills. No amounts, no names.
+12. Only if the Meetings bot exists, video meeting account: the title and time of the next 3 meetings.
+13. Only if the Note taker, Sales or Client prep bot exists, notes tool: the titles and dates of the 3 newest notes. No note text.
+14. Only if the Newsletter bot exists, email platform: the names of my lists and how many people are on each. No addresses.
 
 Then give me one table: connection, alias, result (pass, needs login, failed, not connected), and one line on what you saw.
 For anything that is not "pass", tell me the one thing I should do next. If you could not check something, say "could not check". Do not guess.
