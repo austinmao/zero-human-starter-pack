@@ -1,8 +1,15 @@
 # 04: Save a knowledge dump to GitHub
 
-You have the dump text from prompt 03. Choose ONE of the two ways below.
+You have handoff notes (prompt 07), skills (prompt 08) or dump text (prompt 03). Choose ONE of the two ways below.
 
-## Way A: ask the Code bot (try this first)
+Before you save anything:
+- Only upload to your **private** `my-agents` repo.
+- Never upload raw exports, uploaded client files, or anything with passwords, keys or card numbers.
+- Open each file and skim it. If you spot something private, remove it first.
+
+## Way A: ask the Code bot (for text you paste in)
+
+This works for dump text you paste into the chat. It cannot see a folder on your computer. If you have a folder (handoff notes from prompt 07 or skills from prompt 08), use Way B.
 
 Paste this into your Code bot, followed by the dump text.
 
@@ -22,7 +29,9 @@ Rules:
 
 ## Way B: upload by hand (always works)
 
-1. Save each block as a file on your computer with the right name.
+1. Have your files ready on your computer: the `my-agents-upload` folder from prompts 07 and 08, or one file per dump block with the right name.
 2. Open your `my-agents` repo on github.com.
-3. Go to `knowledge/`, click **Add file** > **Upload files**.
-4. Drag your files in, and click **Commit changes**.
+3. Click **Add file** > **Upload files**.
+4. Drag in the contents of `my-agents-upload` (the `knowledge` and `skills` folders). Check the file list, then click **Commit changes**.
+
+If GitHub refuses a big drag, upload one folder at a time.

@@ -30,7 +30,7 @@ Every bot can be connected to **more than one account** (for example, two Google
 - `bots/<name>/INSTRUCTIONS.md`: the text you paste into each bot.
 - `bots/<name>/SKILLS.md`: skills worth adding to each bot, with links.
 - `prompts/`: step-by-step prompts, from setup to moving your old ChatGPT and Claude knowledge across.
-- `knowledge/`: where your own notes go, in your private copy only.
+- `knowledge/`: where your own notes go, in your private copy only. `knowledge/HOW-TO-EXPORT.md` explains how to get your work out of Claude and ChatGPT.
 
 ## Safety rules built into every bot
 

@@ -1,6 +1,10 @@
 # 03: Knowledge dump from a Claude project
 
-Run this inside ONE Claude project at a time. It produces files you can save to your private `my-agents` repo.
+Run this inside ONE Claude project at a time. Use it for your tier 1 projects, to fill gaps after you have made handoff notes with `07-distill-my-exports.md`. It produces files you can save to your private `my-agents` repo.
+
+On paid plans, Claude can search other chats inside the same project, but that is a search, not a full read. Treat the answer as a draft.
+
+Also copy the project instructions yourself from the project page. The assistant can drop words when it repeats them. The Claude export does not include files you uploaded, so keep your own originals.
 
 Note: Claude's GitHub connector can only read from GitHub. It cannot write to it, so you save the result using `04-push-dump-to-github.md`.
 
