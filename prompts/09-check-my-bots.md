@@ -1,6 +1,6 @@
 # 09: Check that all 8 bots are done
 
-Run this in a **new chat** with a browser agent, after prompt 00 (or after the Factory step). It only looks. It changes nothing. A fresh chat matters: the agent that built the bots tends to say "done" about its own work.
+**Optional.** The Orchestrator already does a quick check of its team during setup. Use this for a second, independent check. Run it in a **new chat** with a browser agent, after prompt 00 (or after the Factory step). It only looks. It changes nothing. A fresh chat matters: the agent that built the bots tends to say "done" about its own work.
 
 Open Grok Bot in a tab and log in yourself first.
 
@@ -20,7 +20,7 @@ Step 2. For each of the 8 bots, in order:
 3. Fetch its INSTRUCTIONS.md from the address in TASKS.md.
 4. Compare. The only allowed differences are my name and the default bot's name. Mark "matches", "differs" (say where, in one line) or "placeholder left" (still shows [YOUR NAME] or [ORCHESTRATOR NAME]).
 5. Note which accounts, if any, the bot shows as connected.
-6. Duties: only the Code bot may write code or change GitHub. Mark "duty problem" if any other bot's instructions say it writes code or changes GitHub, or if it has a GitHub account connected. Orchestrator and Factory must hand that work to Code. Also check the Messaging bot mentions both WhatsApp (wacli) and iMessage.
+6. Duties: only the Code bot may write code or change GitHub. Mark "duty problem" if any other bot's instructions say it writes code or changes GitHub, or if it has a GitHub account connected. Orchestrator and Factory must hand that work to Code. Also check the Messaging bot mentions both WhatsApp (wacli) and iMessage, and that Email, Messaging and Calendar each have a humanizer rule (Email and Messaging also voice cards). Mark "voice problem" if missing.
 If you can run sub-agents or extra tabs, use one per bot for steps 1 to 6. Otherwise go in order.
 
 Step 3. Give me one table: bot, exists, instructions (matches, differs, placeholder left), accounts connected, duties (ok or duty problem).

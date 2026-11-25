@@ -20,6 +20,7 @@ Raw file address for each bot: `https://raw.githubusercontent.com/austinmao/zero
 - **Code is the only bot that writes code or changes GitHub.** Every other bot hands code and GitHub requests to Code, through the Orchestrator.
 - Email, Calendar, Task, Messaging and Drive each own one area. They do not write code and do not touch GitHub.
 - The Factory builds bots but saves their files through Code.
+- Email and Messaging each keep their own voice cards (one person, many people) and run the humanizer on every draft. Calendar runs the humanizer on invite text. The Factory gives new bots the same rule when they write text for people.
 - The Orchestrator hands work out. It does not do other bots' work.
 
 ## Status values

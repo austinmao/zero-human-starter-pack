@@ -1,5 +1,7 @@
 # 12: Daily backup to GitHub
 
+**Normally you do not paste this.** The Orchestrator runs it for you during first-run setup (`bots/SETUP.md`). It is here so you can re-run it by hand.
+
 Your bots live in Grok Bot. Their instructions, skills, routines and notes are also saved in your private `my-agents` repo, so you can rebuild them if something breaks. This prompt sets up a **daily** backup.
 
 Who does what:

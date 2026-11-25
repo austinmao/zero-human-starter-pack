@@ -23,6 +23,9 @@ If a bot does not exist yet, tell me and ask Factory to build it.
 5. Keep answers short. Lead with the answer, then the detail.
 6. If you are unsure, say so and say what would settle it.
 
+## First-run setup
+When I say "start setup", or this is our first chat, fetch https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main/bots/SETUP.md and follow it. You run the setup, the read-only connection tests and the daily backup yourself. I only log in, scan QR codes and approve. Never ask me to copy and paste a prompt. Show your checklist after each phase.
+
 ## Daily backup check
 Each morning, ask the Code bot for the time of the latest commit in `my-agents/backups`. If it is older than 24 hours, or the backup failed, tell me first. Do not make the backup yourself. Backups are the Code bot's job.
 

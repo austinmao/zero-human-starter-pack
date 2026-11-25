@@ -1,6 +1,6 @@
 # Start here
 
-Do the steps in order. Tick each one off as you go. Total time: about 90 minutes the first time.
+Do the steps in order. Tick each one off as you go. Total time: about 90 minutes the first time. You paste one prompt. The bots do the rest.
 
 ## 1. Get Grok Bot (10 min)
 Grok Bot comes with an X Premium or Super subscription. Start on Premium. Move to Super once you use it every day. You pay for this yourself.
@@ -17,25 +17,23 @@ Then install the apps and sign in to both with the same account:
 
 This private repo is the backup of everything you build.
 
-## 3. Let a browser agent build all 8 bots (30 min)
-Open Grok Bot in a tab and log in yourself. Use Claude in Chrome, ChatGPT agent mode or a similar browser agent. Paste `prompts/00-claude-builds-my-grok-bot.md`. It works from a task list (`bots/TASKS.md`), prepares all 8 bots, asks for one OK, then creates them one at a time.
+## 3. Paste one prompt (30 min, mostly watching)
+Open Grok Bot in a tab and log in yourself. Use Claude in Chrome, ChatGPT agent mode or a similar browser agent. Paste `prompts/00-claude-builds-my-grok-bot.md`.
 
-Then open a **new chat** and paste `prompts/09-check-my-bots.md`. It only looks, and gives you a table: does each bot exist, does it match, and is each bot doing only its own job. Only the Code bot writes code or changes GitHub.
+The agent asks your name and what to call your default bot. It builds all 8 bots, then sends your default bot the message "Start setup".
 
-## 4. If the agent cannot create bots: bootstrap from inside Grok Bot (10 min)
-Paste the text from `bots/orchestrator/INSTRUCTIONS.md` into your default bot by hand. Then paste `prompts/01-orchestrator-bootstrap.md` into it.
+## 4. Answer your Orchestrator (30 min)
+From here your Orchestrator runs everything (`bots/SETUP.md`). It checks the team, asks which accounts you use, and tells you where to click to connect each one. **You only log in, scan a QR code and approve.** It tests each connection read only, right after you connect it, sets up WhatsApp, and sets up the daily GitHub backup with the Code bot.
 
-## 5. If the agent cannot create bots: let the Factory do it (15 min)
-Create a bot called Factory with `bots/factory/INSTRUCTIONS.md`, then paste `prompts/02-factory-builds-the-other-bots.md`. Finish with `prompts/09-check-my-bots.md`.
+For WhatsApp you scan one QR code: WhatsApp > Linked devices > Link a device. The Orchestrator tells you when.
 
-## 6. Connect your accounts (20 min)
-Connect email, calendar, drive, tasks and messaging. You log in yourself every time. To add a second or third account, use `prompts/05-connect-more-accounts.md`.
+## 5. If the agent cannot create bots in Grok Bot
+Paste the text from `bots/orchestrator/INSTRUCTIONS.md` into your default bot by hand, then tell it "Start setup". Or paste `prompts/02-factory-builds-the-other-bots.md` into a Factory bot.
 
-**WhatsApp:** follow `prompts/10-connect-whatsapp-wacli.md`. You scan a QR code from WhatsApp's Linked devices screen. The Messaging bot reads WhatsApp with `wacli` and iMessage with the desktop app.
+## 6. Ask it for something real (10 min)
+The Orchestrator ends setup with a read-only check: **What's on my plate this week?** Then it is your turn. Pick any line from `prompts/13-things-to-ask-your-orchestrator.md` and paste it into your Orchestrator's chat. Examples: check my inbox, find the junk to unsubscribe from, summarize my messages, learn how I write emails and texts, or ask the Factory to build a new bot.
 
-**Test it, read only:** run `prompts/11-read-only-connection-test.md`. It sends, creates and deletes nothing.
-
-**Back it up daily:** run `prompts/12-set-up-daily-backup.md`. The Code bot saves your agents to GitHub every day, and the Orchestrator checks each morning that it happened.
+Watch which bot it hands each job to. It should read first and ask before it sends, deletes or saves anything.
 
 ## 7. Move your old knowledge across (optional, 2 to 3 hours in total)
 **Start the clock today:** request your Claude and ChatGPT exports before anything else. ChatGPT can take up to 7 days, and OpenAI is retiring custom GPTs on 11 December 2026. Steps and sources are in `knowledge/HOW-TO-EXPORT.md`.
@@ -46,9 +44,6 @@ Then, once the exports arrive:
 3. **Make handoff notes.** `prompts/07-distill-my-exports.md`, run in Claude on your computer. Raw exports stay on your computer.
 4. **Fill the gaps for tier 1 projects.** Run `prompts/03-knowledge-dump-chatgpt.md` or `prompts/03-knowledge-dump-claude.md` inside the project, and copy its instructions by hand.
 5. **Save it.** `prompts/04-push-dump-to-github.md`. Only handoff notes and skills go to GitHub, never the raw exports.
-
-## 8. First test (2 min)
-Ask the Orchestrator: **What's on my plate this week?** It should check every connected calendar, inbox and task list and tell you which account each item came from.
 
 ## If something goes wrong
 Paste the error message into Claude or ChatGPT together with the step you were on. Nothing in this pack is permanent, so you can always start a step again.

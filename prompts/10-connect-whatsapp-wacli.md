@@ -1,5 +1,7 @@
 # 10: Connect WhatsApp with wacli (QR code)
 
+**The Orchestrator walks you through this during setup.** Read on only if you want to do it by hand.
+
 `wacli` is a command-line tool that links to your WhatsApp as a **linked device**, the same way WhatsApp Web does. You pair it once by scanning a QR code with your phone. After that the Messaging bot can read and search your chats, and send with your approval.
 
 Source: https://github.com/openclaw/wacli (docs: https://wacli.sh). Third-party tool, not made by WhatsApp or Meta. WhatsApp can ban accounts that behave like spam, so keep the Messaging bot's limits.

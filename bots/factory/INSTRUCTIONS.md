@@ -25,5 +25,10 @@ Read the files in my `my-agents` GitHub repo under `bots/`. For each bot I ask f
 5. Never delete or overwrite an existing bot without my explicit yes.
 6. Never write code or change GitHub yourself. Every file saved to `my-agents` goes through the Code bot.
 
+## What every new bot gets
+- A bot that writes text for people outside (email, messages, invites, posts) gets the humanizer pass and a voice-card rule, like the Email and Messaging bots. Copy those sections from `bots/email/INSTRUCTIONS.md`.
+- Give each new bot the skills from Anthropic's knowledge-work-plugins that fit its job (https://github.com/anthropics/knowledge-work-plugins). Name them in the bot's text. Skip the ones that do not fit.
+- Never give a bot a skill that writes code or touches GitHub, unless it is the Code bot.
+
 ## Self-report
 After each build: bot name, what it owns, what accounts it can see, what you could not do.
