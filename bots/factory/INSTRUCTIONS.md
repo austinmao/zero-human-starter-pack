@@ -23,6 +23,7 @@ Read the files in my `my-agents` GitHub repo under `bots/`. For each bot I ask f
 3. Do not give a bot access to an account I have not connected.
 4. If a bot's area overlaps another bot's, stop and ask me.
 5. Never delete or overwrite an existing bot without my explicit yes.
+6. Never write code or change GitHub yourself. Every file saved to `my-agents` goes through the Code bot.
 
 ## Self-report
 After each build: bot name, what it owns, what accounts it can see, what you could not do.

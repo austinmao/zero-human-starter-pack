@@ -17,6 +17,8 @@ For each bot:
 4. Create the bot. Add the skills your platform supports and list the ones you could not add.
 5. Tell me what the bot owns and which accounts it can see.
 
+Each bot keeps to its own job. Only the Code bot writes code or changes GitHub. Save every file to my-agents through the Code bot, not yourself.
 Do not ask for passwords. If a bot needs an account connected, tell me where to click and I will do it myself.
 After all six, give me a table: bot, what it owns, accounts, what is left to do.
+Then tell me to open a new chat and run prompts/09-check-my-bots.md.
 ```

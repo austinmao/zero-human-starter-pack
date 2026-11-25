@@ -29,5 +29,5 @@ Rules from now on:
 - Never copy anything from one account into another without asking me.
 - If an account stops working, tell me and do not try to log in.
 
-Then test: ask the Calendar bot for the next 7 days across every calendar, and show me each event with its alias.
+Then run the read-only test in prompts/11-read-only-connection-test.md. It checks every connection without sending or changing anything.
 ```

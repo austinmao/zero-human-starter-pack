@@ -5,6 +5,11 @@ Do the steps in order. Tick each one off as you go. Total time: about 90 minutes
 ## 1. Get Grok Bot (10 min)
 Grok Bot comes with an X Premium or Super subscription. Start on Premium. Move to Super once you use it every day. You pay for this yourself.
 
+Then install the apps and sign in to both with the same account:
+1. **Desktop app** (Mac, Windows or Linux): download it from the Grok Bot page at cursor.com/dashboard/bot.
+2. **iPhone app** (iOS 18 or later): search "Grok Bot" in the App Store.
+3. **On a Mac, turn on iMessage** in the desktop app (look for iMessage under **Connect apps** in the sidebar). iMessage works only on a Mac, and only while the Mac is on. Not confirmed against a real account: if you cannot find it, ask your bot where it is.
+
 ## 2. Set up GitHub (10 min)
 1. Create a free account at github.com.
 2. Open this repo and click **Use this template** > **Create a new repository**.
@@ -12,17 +17,25 @@ Grok Bot comes with an X Premium or Super subscription. Start on Premium. Move t
 
 This private repo is the backup of everything you build.
 
-## 3. Let Claude set up the Orchestrator for you (15 min)
-Install Claude in Chrome. Open `prompts/00-claude-builds-my-grok-bot.md`, paste it into Claude, and watch it fill in the Orchestrator for you. If that does not work, paste `bots/orchestrator/INSTRUCTIONS.md` into Grok Bot by hand.
+## 3. Let a browser agent build all 8 bots (30 min)
+Open Grok Bot in a tab and log in yourself. Use Claude in Chrome, ChatGPT agent mode or a similar browser agent. Paste `prompts/00-claude-builds-my-grok-bot.md`. It works from a task list (`bots/TASKS.md`), prepares all 8 bots, asks for one OK, then creates them one at a time.
 
-## 4. Bootstrap the Orchestrator (10 min)
-Paste `prompts/01-orchestrator-bootstrap.md` into your Orchestrator.
+Then open a **new chat** and paste `prompts/09-check-my-bots.md`. It only looks, and gives you a table: does each bot exist, does it match, and is each bot doing only its own job. Only the Code bot writes code or changes GitHub.
 
-## 5. Let the Factory build the other bots (15 min)
-Paste `prompts/02-factory-builds-the-other-bots.md`. The Factory creates Code, Email, Calendar, Task, Messaging and Drive.
+## 4. If the agent cannot create bots: bootstrap from inside Grok Bot (10 min)
+Paste the text from `bots/orchestrator/INSTRUCTIONS.md` into your default bot by hand. Then paste `prompts/01-orchestrator-bootstrap.md` into it.
+
+## 5. If the agent cannot create bots: let the Factory do it (15 min)
+Create a bot called Factory with `bots/factory/INSTRUCTIONS.md`, then paste `prompts/02-factory-builds-the-other-bots.md`. Finish with `prompts/09-check-my-bots.md`.
 
 ## 6. Connect your accounts (20 min)
 Connect email, calendar, drive, tasks and messaging. You log in yourself every time. To add a second or third account, use `prompts/05-connect-more-accounts.md`.
+
+**WhatsApp:** follow `prompts/10-connect-whatsapp-wacli.md`. You scan a QR code from WhatsApp's Linked devices screen. The Messaging bot reads WhatsApp with `wacli` and iMessage with the desktop app.
+
+**Test it, read only:** run `prompts/11-read-only-connection-test.md`. It sends, creates and deletes nothing.
+
+**Back it up daily:** run `prompts/12-set-up-daily-backup.md`. The Code bot saves your agents to GitHub every day, and the Orchestrator checks each morning that it happened.
 
 ## 7. Move your old knowledge across (optional, 2 to 3 hours in total)
 **Start the clock today:** request your Claude and ChatGPT exports before anything else. ChatGPT can take up to 7 days, and OpenAI is retiring custom GPTs on 11 December 2026. Steps and sources are in `knowledge/HOW-TO-EXPORT.md`.

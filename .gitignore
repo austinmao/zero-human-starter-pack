@@ -1,0 +1,12 @@
+# Never commit secrets or message data
+.env
+.env.*
+*.pem
+*.key
+*.db
+*.sqlite
+.wacli/
+wacli/
+**/wacli/session*
+raw-exports/
+my-agents-upload/raw/
