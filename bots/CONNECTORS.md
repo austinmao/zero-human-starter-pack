@@ -7,7 +7,7 @@ This is the target for every bot. Default is **off**. A bot gets an app only if 
 | Bot | Agent messaging | Email | Calendar | Drive | Chats | Tasks | GitHub | Shared files | Notes | Web | Other |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Orchestrator | On | R | R | R | - | R | - | - | - | - | - |
-| Code | On | - | - | - | - | - | W | W (shared work folder, never private/) | - | - | - |
+| Code | On | - | - | - | - | - | W | W (shared work folder, never private/; prompt-only unless the platform can scope a bot to one folder) | - | - | - |
 | Factory | On | - | - | - | - | - | - | - | - | - | - |
 | Email | On | W | - | - | - | - | - | - | - | - | - |
 | Messaging | On | - | - | - | W | - | - | - | - | - | - |
@@ -35,15 +35,15 @@ This is the target for every bot. Default is **off**. A bot gets an app only if 
 | Analytics | On | - | - | - | - | - | - | - | - | - | Web analytics R, booking or payment tool R |
 | Outreach | On | - | - | R | - | - | - | - | - | R | - |
 | PR | On | - | - | R | - | - | - | - | - | R | - |
-| Friend | On | - | R | - | - | - | - | W (own private/friend/ only) | - | - | - |
-| Journal | On | - | - | - | - | - | - | W (own private/journal/ only) | - | - | - |
-| Workout | On | - | R | - | - | - | - | W (own private/workout/ only) | - | - | - |
-| Learn | On | - | R | - | - | - | - | W (own private/learn/ only) | - | R | - |
-| Health | On | - | R | - | - | - | - | W (own private/health/ only) | - | - | - |
-| Home errands | On | - | R | - | - | - | - | W (own private/home/ only) | - | - | Grocery site W, prompt-only (owner: Home errands) |
-| Trip planner | On | R | - | - | - | - | - | W (own private/trip/ only) | - | R | - |
-| Selling | On | - | - | - | - | - | - | W (own private/selling/ only) | - | R | Photos I give you R |
-| Investment | On | - | - | - | - | - | - | W (own private/investment/ only) | - | R | - |
+| Friend | On | - | R | - | - | - | - | W (own private/friend/ only; prompt-only unless the platform can scope a bot to one folder) | - | - | - |
+| Journal | On | - | - | - | - | - | - | W (own private/journal/ only; prompt-only unless the platform can scope a bot to one folder) | - | - | - |
+| Workout | On | - | R | - | - | - | - | W (own private/workout/ only; prompt-only unless the platform can scope a bot to one folder) | - | - | - |
+| Learn | On | - | R | - | - | - | - | W (own private/learn/ only; prompt-only unless the platform can scope a bot to one folder) | - | R | - |
+| Health | On | - | R | - | - | - | - | W (own private/health/ only; prompt-only unless the platform can scope a bot to one folder) | - | - | - |
+| Home errands | On | - | R | - | - | - | - | W (own private/home/ only; prompt-only unless the platform can scope a bot to one folder) | - | - | Grocery site W, prompt-only (owner: Home errands) |
+| Trip planner | On | R | - | - | - | - | - | W (own private/trip/ only; prompt-only unless the platform can scope a bot to one folder) | - | R | - |
+| Selling | On | - | - | - | - | - | - | W (own private/selling/ only; prompt-only unless the platform can scope a bot to one folder) | - | R | Photos I give you R |
+| Investment | On | - | - | - | - | - | - | W (own private/investment/ only; prompt-only unless the platform can scope a bot to one folder) | - | R | - |
 
 ## Owners (the one canonical list)
 
@@ -69,6 +69,6 @@ Every other file in this pack links here. None of them restates this list.
 5. **Messages, not files.** A bot asks an owner bot to write by sending it a real message with the platform's agent-messaging tool (on GrokBot: SendToAgent). Agent messaging is not an app and is on for every bot. A task is running only after the message was sent. A shared file such as `HANDOFFS.md` may be a log of what happened. It is never the way a job is delivered. Every owner bot can message back.
 6. **Changing access needs my yes.** The Factory and the Orchestrator never widen a bot's access on their own. They show the change and wait.
 7. **Test both ways.** After you set limits, give each bot one read it is allowed to do and one read in an app that is off for it. The allowed read works. The other one is refused by the platform, not just by the bot saying no.
-8. **Prompt-only limits.** Some limits cannot be enforced by a connector: a thread-level limit inside a connected mailbox or calendar (the connector gives the whole account), and browser sessions I log in to (business listing, social accounts, grocery site). Those rows are marked prompt-only. Treat them as the weaker safeguard.
+8. **Prompt-only limits.** Some limits cannot be enforced by a connector: a thread-level limit inside a connected mailbox or calendar (the connector gives the whole account), browser sessions I log in to (business listing, social accounts, grocery site), and the shared computer (a bot is kept to its own folder only if the platform can scope it to one folder). Those rows are marked prompt-only. Treat them as the weaker safeguard.
 
 If your platform cannot set limits per bot, say so plainly in your notes. Keep the table anyway, use one account per area, and treat the prompt rules as a weaker safeguard.

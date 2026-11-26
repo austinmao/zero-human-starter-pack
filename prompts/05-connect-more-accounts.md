@@ -17,7 +17,7 @@ Your platform has a connections or integrations area. Connect one account at a t
 Some platforms connect only one Google account directly. If yours does, ask it how to add more (for example, through a connector service that supports account names). If it cannot, connect the extra accounts in a second profile or browser and tell the bot which is which.
 
 ## Step 2b: give each bot only what it needs
-Connecting an account is not the same as giving every bot access to it. In your platform's per-bot connector settings, give each bot only the apps it needs, read only or read and write, on the right account. The table is `bots/CONNECTORS.md`. Email, Calendar and Drive are the only bots that write to mail, calendars and files. Other bots read, read only. Your Orchestrator will walk you through it.
+Connecting an account is not the same as giving every bot access to it. In your platform's per-bot connector settings, give each bot only the apps it needs, read only or read and write, on the right account. The table is `bots/CONNECTORS.md`. Each app with side effects has one owner: see the owner list in `bots/CONNECTORS.md`. Your Orchestrator will walk you through it.
 
 ## Step 3: tell the Orchestrator
 

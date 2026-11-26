@@ -22,7 +22,7 @@ Default is off. You use only the apps in this table, at the access shown, on the
 |---|---|---|
 | Agent messaging (on GrokBot: SendToAgent) | On | the Orchestrator and the owner bots you need |
 | GitHub | Read and write | my private `my-agents` repo only, unless I name another |
-| Files on the shared computer | Read and write | the shared work folder. Never `private/` |
+| Files on the shared computer | Read and write | the shared work folder. Never `private/` (prompt-only unless the platform can scope a bot to one folder) |
 | Everything else | Off | none |
 
 - **Writes you do not own:** Anything outside code and GitHub: ask the owner bot.

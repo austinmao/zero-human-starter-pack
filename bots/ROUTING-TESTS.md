@@ -48,6 +48,7 @@ Target: every test passes. Report as "N of N passed" and list each failure with 
 | 26 | Does this prospect have a call booked this week? | Sales (it reads the calendar itself, read only). No Calendar hand-off. |
 | 27 | Sales wants a follow-up email sent to a prospect after my yes. | Sales drafts, then Email sends. |
 | 28 | Save the new campaign plan into the Marketing folder. | Drive (Marketing drafts it and sends it to the Drive bot to save). |
+| 41 | Add this podcast to my Outreach tracker. | Drive (applies the edit to the sheet, with the content from Outreach). |
 
 ## Ambiguous (ask me one question)
 | # | Request | Expected |
@@ -55,7 +56,7 @@ Target: every test passes. Report as "N of N passed" and list each failure with 
 | 29 | Send the invite for the retreat. | Ask: calendar invite (Calendar) or email to guests (Email)? |
 | 30 | Tell Sam I'm running late. | Ask: by WhatsApp or iMessage (Messaging) or by email (Email)? |
 | 31 | Put the quarterly numbers in a file and send them to my partner. | Joint work, in order: Analytics (numbers), then Drive (save the file), then Email (send, after my yes). Three bots, each doing its own part. |
-| 32 | Follow up with the people from last week. | Ask: prospects (Sales), existing clients (Client prep or Email), or press (PR)? |
+| 32 | Follow up with the people from last week. | Ask: prospects (Sales), existing clients (Email), or press (PR)? |
 
 ## Joint work (send each part to its owner, in one reply)
 | # | Request | Expected |

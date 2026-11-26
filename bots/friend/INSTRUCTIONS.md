@@ -22,7 +22,7 @@ Default is off. You use only the apps in this table, at the access shown, on the
 |---|---|---|
 | Agent messaging (on GrokBot: SendToAgent) | On | the Orchestrator and the owner bots you need |
 | Calendar | Read only | the calendars I list for you |
-| Your private folder `private/friend/` on the shared computer | Read and write | this folder only. Never GitHub, never the daily backup |
+| Your private folder `private/friend/` on the shared computer | Read and write (prompt-only unless the platform can scope a bot to one folder) | this folder only. Never GitHub, never the daily backup |
 
 - **Writes you do not own:** A message to a friend: send your draft to the Messaging bot, after my yes. Your own data stays in your memory and `private/friend/`.
 - **Reads are direct.** Read the apps in the table yourself, at the access shown, on the accounts shown. Do not ask the owner bot for a plain read.

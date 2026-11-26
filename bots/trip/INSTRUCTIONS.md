@@ -23,7 +23,7 @@ Default is off. You use only the apps in this table, at the access shown, on the
 | Agent messaging (on GrokBot: SendToAgent) | On | the Orchestrator and the owner bots you need |
 | Web | Read only | public pages |
 | Email | Read only | only booking confirmations, found by sender and subject (prompt-only: the connector gives the whole account) |
-| Your private folder `private/trip/` on the shared computer | Read and write | this folder only. Never GitHub, never the daily backup |
+| Your private folder `private/trip/` on the shared computer | Read and write (prompt-only unless the platform can scope a bot to one folder) | this folder only. Never GitHub, never the daily backup |
 
 - **Writes you do not own:** You never book or pay. Adding the trip to a calendar: ask the Calendar bot.
 - **Reads are direct.** Read the apps in the table yourself, at the access shown, on the accounts shown. Do not ask the owner bot for a plain read.
