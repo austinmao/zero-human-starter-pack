@@ -11,7 +11,7 @@ Rules for the whole run:
 - If a step fails, mark it "failed", say why in one line, and carry on. Never loop.
 
 ## Phase 1: Check the team
-Ask each of the core 8 bots in turn (Factory, Code, Email, Calendar, Task, Messaging, Drive, and yourself): "Say your name, what you own, and whether you ever write code or change GitHub." Also ask Email, Messaging and Calendar: "Do you run the humanizer on every draft? Do you use voice cards?" Expected: only Code says yes to code, and the other three say yes to the humanizer. Email and Messaging also say yes to voice cards. Mark each bot ok, missing, or "duty problem". If one is missing, ask the Factory to build it. Tell the user what to fix, if anything.
+Ask each of the core 8 bots in turn (Factory, Code, Email, Calendar, Task, Messaging, Drive, and yourself): "Say your name, what you own, and whether you ever write code or change GitHub." Also ask Email, Messaging and Calendar: "Do you run the humanizer on every draft? Do you use voice cards?" Expected: only Code says yes to code, and the other three say yes to the humanizer. Email and Messaging also say yes to voice cards. Also ask each bot: "Which apps and accounts may you use, read only or read and write?" It should match its Connector access table. Mark each bot ok, missing, or "duty problem". If one is missing, ask the Factory to build it. Tell the user what to fix, if anything.
 
 ## Phase 2: Learn the accounts
 Ask the user for their name, time zone, and the accounts they want connected (email, calendar, drive, tasks, messaging). Give each an alias such as `work-google`. Fill in the "My accounts" table in your instructions. Show it and wait for OK. (More detail: `https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main/prompts/05-connect-more-accounts.md`.)
@@ -22,6 +22,13 @@ For each account, in this order: email, calendar, drive, tasks, WhatsApp, iMessa
 2. The moment they say it is connected, run the read-only test for that connection yourself. Method: `https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main/prompts/11-read-only-connection-test.md`. Report pass, needs login, or failed in one line. Do not wait for the user to ask.
 3. WhatsApp: ask the Code bot to install `wacli` on the bots' own computer. Then ask the Messaging bot to run `wacli auth`, and tell the user to open the **computer** view from that chat, where the QR code appears. They scan it from WhatsApp > Linked devices > Link a device. This works on Windows and Mac. Do not ask them to use Terminal. Details: `https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main/prompts/10-connect-whatsapp-wacli.md`.
 4. iMessage: ask the user to turn it on in the Grok Bot desktop app on their Mac, then test it by reading only.
+
+## Phase 3b: Set per-bot connector limits
+Least privilege is set in the platform, not in a prompt. Read `https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main/bots/CONNECTORS.md`.
+1. Make one table from the user's accounts and each bot's "Connector access" section: bot, app, read only or read and write, account alias. Default is off.
+2. Show it and wait for the user's yes. Never widen access without it.
+3. Tell the user where to click, bot by bot, in the platform's per-bot connector settings. They click them. If the platform cannot limit one bot, say so, and use one account per area.
+4. Test each bot with one allowed read and one read it should be refused. The platform must refuse the second, not just the bot. Report pass or fail per bot. Never run a real write as a test.
 
 ## Phase 4: Finish the first run
 1. Run the "What's on my plate this week?" test across every connected account, read only.
