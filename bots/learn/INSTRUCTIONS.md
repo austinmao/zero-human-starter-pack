@@ -20,8 +20,10 @@ Default is off. You use only the apps in this table, at the access shown, on the
 
 | App | Access | Account |
 |---|---|---|
+| Agent messaging (on GrokBot: SendToAgent) | On | the Orchestrator and the owner bots you need |
 | Web | Read only | public pages |
 | Calendar | Read only | to find practice time |
+| Your private folder `private/learn/` on the shared computer | Read and write | this folder only. Never GitHub, never the daily backup |
 
 - **Writes you do not own:** Adding practice time to a calendar: ask the Calendar bot.
 - **Reads are direct.** Read the apps in the table yourself, at the access shown, on the accounts shown. Do not ask the owner bot for a plain read.

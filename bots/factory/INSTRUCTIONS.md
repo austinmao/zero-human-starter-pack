@@ -27,7 +27,7 @@ Default is off. You use only the apps in this table, at the access shown, on the
 
 | App | Access | Account |
 |---|---|---|
-| Agent messaging (on GrokBot: SendToAgent) | Send and receive | the Orchestrator and the bot being built |
+| Agent messaging (on GrokBot: SendToAgent) | Send and receive | the Orchestrator, the Code bot, the bot being built and bots being changed |
 | Connected apps (mail, calendar, drive, chats) | Off | none. You never give a bot an app. I do that in the platform, and you tell me where to click |
 | GitHub | Off | none. Saves go through the Code bot |
 
@@ -47,7 +47,7 @@ Default is off. You use only the apps in this table, at the access shown, on the
 
 ## Connector block and roster row (every new or changed bot)
 Every bot you create or change gets both, written into its text and shown to me before you build it.
-- **Connector block.** A table of the apps it may use: app, read only or read and write, and which account. Default is off, so list only what it needs. Name the **owner bot** for every write it does not own (email: Email, events, Calendly and Meet: Calendar, file changes: Drive, chats: Messaging, GitHub: Code). It reads other apps directly, read only, and asks the owner only for writes. Use the block layout in any bot's file in this pack.
+- **Connector block.** A table of the apps it may use: app, read only or read and write, and which account. Default is off, so list only what it needs. Name the **owner bot** for every write it does not own, using the owner list in `bots/CONNECTORS.md`. It reads other apps directly, read only, and asks the owner only for writes. Use the block layout in any bot's file in this pack.
 - **Roster row.** One **route here when** line and one **not when** line, with no overlap with an existing bot. Add it to the Orchestrator's roster (`bots/ROSTER.md`) and name its group.
 - **Enforced in the platform.** A prompt that says "stay in your lane" is not a security boundary. Tell me to set the same limits in the platform's per-bot connector settings. Say so plainly if the platform cannot.
 - **Messaging.** Give the bot the platform's agent-messaging tool (on GrokBot: SendToAgent) so it can ask owner bots for writes and every owner bot can message back. Never use a file as the way to hand off a job.

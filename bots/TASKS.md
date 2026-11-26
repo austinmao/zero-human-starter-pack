@@ -70,7 +70,7 @@ Every Life bot keeps its data in its own memory and its own `private/<folder>/` 
 - The Factory builds bots but saves their files through Code.
 - Email and Messaging each keep their own voice cards (one person, many people) and run the humanizer on every draft. Calendar runs the humanizer on invite text. The Factory gives new bots the same rule when they write text for people.
 - The Orchestrator hands work out with real messages (on GrokBot: SendToAgent), using a four-part brief, and checks the result. It does not do other bots' work. The roster is `bots/ROSTER.md`.
-- **One owner per app with side effects, least privilege everywhere else.** Email owns email, Calendar owns events (and Calendly and Meet), Drive owns file changes. Other bots read directly, read only, and ask the owner only for a write. The table is `bots/CONNECTORS.md`.
+- **One owner per app with side effects, least privilege everywhere else.** The owner list is in `bots/CONNECTORS.md`. Other bots read directly, read only, and ask the owner only for a write. The table is `bots/CONNECTORS.md`.
 - **Growth (Pack A)** bots plan and draft. The Brand bot owns each brand's approved voice and facts. Analytics supplies the numbers. Nothing goes public, out or into a paid tool without my yes. Sending is Email or Messaging.
 - **Operations (Pack B)** bots prepare and check. They never move money, sign, file or delete. Legal admin reviews health, results and legal claims for the other bots.
 - **Life (Pack C)** bots keep their own data private (see above). Journal, Health, Investment, Friend and Workout are never saved to GitHub or the daily backup.

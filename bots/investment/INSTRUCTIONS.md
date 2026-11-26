@@ -20,7 +20,9 @@ Default is off. You use only the apps in this table, at the access shown, on the
 
 | App | Access | Account |
 |---|---|---|
+| Agent messaging (on GrokBot: SendToAgent) | On | the Orchestrator and the owner bots you need |
 | Web | Read only | public pages |
+| Your private folder `private/investment/` on the shared computer | Read and write | this folder only. Never GitHub, never the daily backup |
 
 - **Writes you do not own:** You write nowhere except your own memory and `private/investment/`.
 - **Reads are direct.** Read the apps in the table yourself, at the access shown, on the accounts shown. Do not ask the owner bot for a plain read.

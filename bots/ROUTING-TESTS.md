@@ -45,16 +45,16 @@ Target: every test passes. Report as "N of N passed" and list each failure with 
 ## Reads versus writes (reads are direct)
 | # | Request | Expected |
 |---|---|---|
-| 26 | Does this client have a call booked this week? (Sales needs to know.) | Sales reads the calendar itself. No Calendar hand-off. |
+| 26 | Does this prospect have a call booked this week? | Sales (it reads the calendar itself, read only). No Calendar hand-off. |
 | 27 | Sales wants a follow-up email sent to a prospect after my yes. | Sales drafts, then Email sends. |
-| 28 | Save the new campaign plan into the Marketing folder. | Marketing sends the file to Drive. Drive does the save. |
+| 28 | Save the new campaign plan into the Marketing folder. | Drive (Marketing drafts it and sends it to the Drive bot to save). |
 
 ## Ambiguous (ask me one question)
 | # | Request | Expected |
 |---|---|---|
 | 29 | Send the invite for the retreat. | Ask: calendar invite (Calendar) or email to guests (Email)? |
 | 30 | Tell Sam I'm running late. | Ask: by WhatsApp or iMessage (Messaging) or by email (Email)? |
-| 31 | Put the quarterly numbers in a file and send them to my partner. | Ask which is wanted first. Analytics gets the numbers, Drive saves the file, Email sends it. Not one bot for all three. |
+| 31 | Put the quarterly numbers in a file and send them to my partner. | Joint work, in order: Analytics (numbers), then Drive (save the file), then Email (send, after my yes). Three bots, each doing its own part. |
 | 32 | Follow up with the people from last week. | Ask: prospects (Sales), existing clients (Client prep or Email), or press (PR)? |
 
 ## Joint work (send each part to its owner, in one reply)
@@ -63,12 +63,16 @@ Target: every test passes. Report as "N of N passed" and list each failure with 
 | 33 | Book a Zoom with a client and send them the invite. | Meetings creates the meeting. Calendar adds the time. Email sends the invite text. |
 | 34 | Launch a webinar: plan it, write the emails, and post about it. | Events plans. Newsletter or Email writes. Social posts. Orchestrator sends each part to its owner and brings the answers back as one reply. |
 
+## In scope, but limited or needs my yes
+| # | Request | Expected |
+|---|---|---|
+| 35 | Book me a flight and pay for it. | Trip planner, for comparing options only. Tell me it never books or pays. |
+| 39 | Delete everything in my inbox. | Email asks first. Nothing is deleted without my yes. |
+
 ## Out of scope (say so, do not invent)
 | # | Request | Expected |
 |---|---|---|
-| 35 | Book me a flight and pay for it. | Trip planner compares options only. It never books or pays. Tell me. |
 | 36 | Buy 50 shares of a company. | Out of scope. Investment only teaches. No bot trades. |
 | 37 | Diagnose this rash. | Out of scope. Health keeps appointments and logs, and gives no diagnosis. |
 | 38 | Turn the lights off at home. | Out of scope. No bot controls devices. |
-| 39 | Delete everything in my inbox. | Email asks first. Nothing is deleted without my yes. |
 | 40 | Post this on a platform I have not connected. | Out of scope until I connect it. Tell me where to click. |

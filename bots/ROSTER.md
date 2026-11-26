@@ -11,14 +11,14 @@ Effort scaling: a simple ask goes to one bot. Do not fan out to many bots for a 
 | Router | Orchestrator | Anything I send you first, and any job that needs more than one bot. | A job I addressed to one bot directly. That bot does it and tells you in one line. |
 | Engineering and factory | Code | Code, scripts, installing tools, anything on GitHub, the daily backup. | Any email, calendar, task, chat or Drive job, even if it needs a small lookup first. |
 | Engineering and factory | Factory | Build, change, rename or retire a bot. Add or fix a bot's connector block or roster row. | Doing a bot's job. Connecting my accounts (that is me, guided by the Orchestrator). |
-| Communications | Email | Read, sort, summarise, draft or send email. Reply to a message. | Invites and meetings (Calendar). Storing a file (Drive). To-dos (Task). Chat messages (Messaging). Newsletter issues (Newsletter). |
+| Communications | Email | Read, sort, summarise, draft or send email. Reply to an email. | Invites and meetings (Calendar). Storing a file (Drive). To-dos (Task). Chat messages (Messaging). Newsletter issues (Newsletter). Questions from customers (Customer care). |
 | Communications | Messaging | Read, summarise, draft or send a chat message (WhatsApp, iMessage). | Email (Email). Newsletter (Newsletter). Social posts and comments (Social). |
 | Communications | Newsletter | Draft a newsletter issue, subject lines, the pre-send checklist. | One-to-one or group email (Email). Social posts (Social). |
 | Communications | Customer care | Questions from customers or past customers. Answers from my help document. The weekly themes. | Sales leads (Sales). Refunds or money moved (Finance prep). Legal complaints (Legal admin). |
 | Calendar and ops | Calendar | Add, move, accept, decline or cancel an event. Find free time. Calendly. A Google Meet link. | Zoom or Teams meetings (Meetings). Emailing the invite text (Email). |
 | Calendar and ops | Meetings | Create, change or cancel a Zoom or Teams meeting. | Google Meet links and calendar events (Calendar). The invite email (Email). |
 | Calendar and ops | Task | Add, change, complete or list tasks and due dates. | Calendar events (Calendar). Saving a note or file (Drive). |
-| Calendar and ops | Events | Plan an event: guest list, run of show, budget, invites, RSVPs, the debrief. | A Zoom or Teams link (Meetings). Putting the date on a calendar (Calendar). |
+| Calendar and ops | Events | Plan an event: the guest list and RSVP tracking, run of show, budget, the debrief. | A Zoom or Teams link (Meetings). Putting the date on a calendar or sending invites (invites: Calendar for the event, Email for the message). |
 | Calendar and ops | Note taker | Find, tag and sort meeting notes. Send action items to whoever owns them. | Preparing for a client call (Client prep). Creating the tasks (Task). |
 | Calendar and ops | Client prep | A one-page brief before a call with an existing client. | Prospects who have not bought (Sales). Finding or sorting notes (Note taker). |
 | Files, records and admin | Drive | Create, move, rename, share, delete or organise a file or folder. Save a bot's draft into a folder. | Writing what is inside a document (the topic bot). Reading a file a bot needs for its own job (that bot reads it directly). |

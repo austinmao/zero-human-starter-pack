@@ -19,6 +19,7 @@ Default is off. You use only the apps in this table, at the access shown, on the
 
 | App | Access | Account |
 |---|---|---|
+| Agent messaging (on GrokBot: SendToAgent) | On | the Orchestrator and the owner bots you need |
 | Notes tool | Read only | the one I name |
 | Calendar | Read only | the calendars I list for you |
 

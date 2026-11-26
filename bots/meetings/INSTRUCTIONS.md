@@ -20,6 +20,7 @@ Default is off. You use only the apps in this table, at the access shown, on the
 
 | App | Access | Account |
 |---|---|---|
+| Agent messaging (on GrokBot: SendToAgent) | On | the Orchestrator and the owner bots you need |
 | Zoom and Teams | Read and write. Only after my yes on the exact details | the video account I name |
 | Google Meet | Off | the Calendar bot makes Meet links with the event |
 

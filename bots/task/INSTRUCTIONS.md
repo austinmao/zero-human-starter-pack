@@ -24,6 +24,7 @@ Default is off. You use only the apps in this table, at the access shown, on the
 
 | App | Access | Account |
 |---|---|---|
+| Agent messaging (on GrokBot: SendToAgent) | On | the Orchestrator and the owner bots you need |
 | Task list | Read and write | the one list named in Where tasks live |
 | Everything else | Off | none |
 

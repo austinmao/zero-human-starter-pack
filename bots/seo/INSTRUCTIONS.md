@@ -20,7 +20,8 @@ Default is off. You use only the apps in this table, at the access shown, on the
 
 | App | Access | Account |
 |---|---|---|
-| My business listing | Read. Changes only after my yes, while I am logged in | the listing I name |
+| Agent messaging (on GrokBot: SendToAgent) | On | the Orchestrator and the owner bots you need |
+| My business listing | Read and write (W, prompt-only: it is a browser session I log in to, so the platform cannot limit it). Changes only after my yes | the listing I name. Owner: you |
 | Web | Read only | public pages |
 
 - **Writes you do not own:** Anything outside the listing: ask the owner bot.

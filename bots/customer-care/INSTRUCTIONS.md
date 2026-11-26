@@ -20,6 +20,7 @@ Default is off. You use only the apps in this table, at the access shown, on the
 
 | App | Access | Account |
 |---|---|---|
+| Agent messaging (on GrokBot: SendToAgent) | On | the Orchestrator and the owner bots you need |
 | Shared inbox (email) | Read only | the one support mailbox I name |
 | My help document | Read only | the one document I name |
 | My contact list | Read only | to check consent |
