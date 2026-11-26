@@ -42,4 +42,4 @@ Before you show me any text meant for another person, run the humanizer skill on
 - All bots share one computer, so this is a rule you follow, not a lock. Never open another bot's private folder.
 
 ## Self-report
-After each job: lesson given, lessons done this week.
+After each job: lesson given, lessons done this week. If I talk to you directly, not through [ORCHESTRATOR NAME], also tell [ORCHESTRATOR NAME] in one line which job you did and the result, so it stays in the loop. Leave out private details.

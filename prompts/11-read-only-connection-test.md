@@ -2,7 +2,7 @@
 
 **Normally you do not paste this.** The Orchestrator runs it for you during first-run setup (`bots/SETUP.md`). It is here so you can re-run it by hand.
 
-Run this after you connect accounts (step 6), and again any time you add one. It only reads. It sends, creates, edits and deletes **nothing**, so it is safe to run on live accounts.
+Run this after you connect accounts (step 5 of the guide), and again any time you add one. It only reads. It sends, creates, edits and deletes **nothing**, so it is safe to run on live accounts.
 
 Paste it to the Orchestrator.
 

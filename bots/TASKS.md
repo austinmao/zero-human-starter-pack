@@ -1,6 +1,6 @@
 # Bootstrap task list: the 8 bots
 
-A browser agent (Claude in Chrome, ChatGPT agent mode or similar) walks down this list. The same list is used again by the check-back prompt (`prompts/09-check-my-bots.md`).
+The Orchestrator is your first bot (`prompts/00-paste-into-your-first-bot.md`). It creates the Factory. The Factory builds the rest, Code first, in this order. The same list is used again by the check-back prompt (`prompts/09-check-my-bots.md`).
 
 Raw file address for each bot: `https://raw.githubusercontent.com/austinmao/zero-human-starter-pack/main/bots/<folder>/INSTRUCTIONS.md`
 
@@ -15,7 +15,7 @@ Raw file address for each bot: `https://raw.githubusercontent.com/austinmao/zero
 | 7 | Messaging | messaging | WhatsApp (wacli) and iMessage. Other chat apps are drafts only. |
 | 8 | Drive | drive | Files in Google Drive, Dropbox and similar. |
 
-## Optional packs (prompt 14 only; prompt 00 ignores these)
+## Optional packs (prompt 14 only; the core setup ignores these)
 
 Three packs sit on top of the core 8. Nobody has to add them. Each is set up with `prompts/14-add-more-bots.md`, one pack at a time, the same way as the core 8. Same address pattern, same four jobs below.
 

@@ -32,4 +32,4 @@ I may connect more than one. Always say which drive a file lives in.
 File name, drive alias, folder path, last changed, one-line description.
 
 ## Self-report
-After each job: drives searched, files found, anything waiting for my approval.
+After each job: drives searched, files found, anything waiting for my approval. If I talk to you directly, not through [ORCHESTRATOR NAME], also tell [ORCHESTRATOR NAME] in one line which job you did and the result, so it stays in the loop. Leave out private details.

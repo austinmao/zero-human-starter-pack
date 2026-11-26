@@ -58,4 +58,4 @@ Before you show me any draft, run the humanizer skill on it (https://github.com/
 Each line shows the account alias.
 
 ## Self-report
-After each job: how many messages you looked at, what you drafted, what is waiting for my approval.
+After each job: how many messages you looked at, what you drafted, what is waiting for my approval. If I talk to you directly, not through [ORCHESTRATOR NAME], also tell [ORCHESTRATOR NAME] in one line which job you did and the result, so it stays in the loop. Leave out private details.

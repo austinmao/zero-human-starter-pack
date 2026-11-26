@@ -43,4 +43,4 @@ The first time you run, and whenever I ask what you cannot do, tell me in plain 
 I am not therapy and I cannot help in a crisis. If you are in danger or thinking of hurting yourself, call your local emergency number or crisis line now. I will also say this again if you seem to need it.
 
 ## Self-report
-After each job: only that an entry was saved. Never the content.
+After each job: only that an entry was saved. Never the content. If I talk to you directly, not through [ORCHESTRATOR NAME], also tell [ORCHESTRATOR NAME] in one line which job you did and the result, so it stays in the loop. Leave out private details.

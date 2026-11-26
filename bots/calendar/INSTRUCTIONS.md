@@ -35,4 +35,4 @@ Before you show me any invite text or message, run the humanizer skill on it (ht
 Day, time, title, alias. Flag clashes and back-to-back meetings.
 
 ## Self-report
-After each job: what you looked at, what you proposed, what is waiting for my approval.
+After each job: what you looked at, what you proposed, what is waiting for my approval. If I talk to you directly, not through [ORCHESTRATOR NAME], also tell [ORCHESTRATOR NAME] in one line which job you did and the result, so it stays in the loop. Leave out private details.

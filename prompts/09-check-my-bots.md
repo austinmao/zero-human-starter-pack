@@ -1,6 +1,6 @@
 # 09: Check that all your bots are done
 
-**Optional.** The Orchestrator already does a quick check of its team during setup. Use this for a second, independent check. Run it in a **new chat** with a browser agent, after prompt 00 (or after the Factory step). It only looks. It changes nothing. A fresh chat matters: the agent that built the bots tends to say "done" about its own work.
+**Optional.** The Orchestrator already does a quick check of its team during setup. Use this for a second, independent check. Run it in a **new chat** with a browser agent (Claude in Chrome or ChatGPT agent mode), after setup. If you do not use a browser agent, skip this: your Orchestrator already checked the team in Phase 1. It only looks. It changes nothing. A fresh chat matters: the agent that built the bots tends to say "done" about its own work.
 
 Open Grok Bot in a tab and log in yourself first.
 

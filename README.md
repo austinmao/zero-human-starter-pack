@@ -19,20 +19,21 @@ You do not need to be technical. If you have used ChatGPT or Claude, you can do 
 
 Every bot can be connected to **more than one account** (for example, two Google calendars).
 
-**Optional packs.** When the core 8 work, add more bots one pack at a time with `prompts/14-add-more-bots.md`: Growth (12 bots), Operations (9) and Life (9). Life bots keep their data private and out of the GitHub backup.
+**Optional packs (Part 3).** When the core 8 work, add more bots one pack at a time with `prompts/14-add-more-bots.md`: Growth (12 bots), Operations (9) and Life (9). Life bots keep their data private and out of the GitHub backup.
 
 ## Quick start
 
-1. Click **Use this template** at the top of this page and create a **private** repo called `my-agents`. Everything you build is backed up there.
-2. Open `START-HERE.md` and follow the steps in order.
-3. Paste `prompts/01-orchestrator-bootstrap.md` into your assistant first.
+1. Sign up for Grok, pay for a plan that includes Grok Bot, and install the desktop app (x.ai/bot).
+2. Open `START-HERE.md` (or the interactive guide) and follow Part 1.
+3. Paste `prompts/00-paste-into-your-first-bot.md` into your first bot. It becomes your Orchestrator and builds the rest.
+4. At the end, connect GitHub for a daily backup. Optional Part 2 moves your old Claude and ChatGPT work across. Optional Part 3 adds more bots.
 
 ## What is in this pack
 
 - `bots/<name>/INSTRUCTIONS.md`: the text you paste into each bot.
 - `bots/<name>/SKILLS.md`: skills worth adding to each bot, with links.
 - `prompts/`: step-by-step prompts, from setup to moving your old ChatGPT and Claude knowledge across.
-- `knowledge/`: where your own notes go, in your private copy only. `knowledge/HOW-TO-EXPORT.md` explains how to get your work out of Claude and ChatGPT.
+- `knowledge/`: where your own notes go, in your private copy only (Part 2). `knowledge/HOW-TO-EXPORT.md` explains how to get your work out of Claude and ChatGPT.
 
 ## Safety rules built into every bot
 

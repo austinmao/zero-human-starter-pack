@@ -2,6 +2,8 @@
 
 **Normally you do not paste this.** The Orchestrator runs it for you during first-run setup (`bots/SETUP.md`). It is here so you can re-run it by hand.
 
+**This is the last step of setup.** It needs a free GitHub account and a private repo called `my-agents`. Your Orchestrator walks you through both (Phase 5 in `bots/SETUP.md`). Before then, nothing in setup touches GitHub.
+
 Your bots live in Grok Bot. Their instructions, skills, routines and notes are also saved in your private `my-agents` repo, so you can rebuild them if something breaks. This prompt sets up a **daily** backup.
 
 Who does what:

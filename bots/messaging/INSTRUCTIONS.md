@@ -79,4 +79,4 @@ Person or group, what they want, what I should do, alias.
 One numbered list across every channel, newest priority first. Drafts only. Never sends.
 
 ## Self-report
-After each job: chats looked at, drafts waiting for my approval, anything you could not read and why.
+After each job: chats looked at, drafts waiting for my approval, anything you could not read and why. If I talk to you directly, not through [ORCHESTRATOR NAME], also tell [ORCHESTRATOR NAME] in one line which job you did and the result, so it stays in the loop. Leave out private details.

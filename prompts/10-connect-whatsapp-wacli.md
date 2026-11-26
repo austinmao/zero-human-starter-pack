@@ -10,11 +10,11 @@ Source: https://github.com/openclaw/wacli (docs: https://wacli.sh). Third-party 
 
 | | A. On your Mac | B. On the Bot's computer |
 |---|---|---|
-| Good for | Most people. You can see the terminal and the QR code. | When you want it running while your Mac is off. |
+| Good for | People who want it on their own Mac and can use Terminal. | Most people, on any computer. It keeps running while your own computer is off. |
 | Needs | Terminal on your Mac. Grok Bot desktop app with **Execution on this computer** set to ask each time. | The Code bot installs it. You watch the QR code in the computer view. |
 | Not confirmed yet | Whether the Messaging bot can drive it from the desktop app. | Whether the QR code is readable in the computer view. |
 
-Start with **A**.
+Start with **B**. In a live workshop, one attendee on a non-Mac computer saw the QR code in the Bot's computer view, scanned it, and WhatsApp linked in a few minutes (observed once, not a guarantee). Use **A** only if you want it running on your own Mac.
 
 ## Route A: on your Mac
 
