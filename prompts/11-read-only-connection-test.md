@@ -30,6 +30,8 @@ Ask each bot to run its own check and report back:
 13. Only if the Note taker, Sales or Client prep bot exists, notes tool: the titles and dates of the 3 newest notes. No note text.
 14. Only if the Newsletter bot exists, email platform: the names of my lists and how many people are on each. No addresses.
 
+After the connection tests, for each bot that exists, also do one allowed read and one read it should be refused (an app that is not in its table in `bots/CONNECTORS.md`). The refusal must come from the platform. Never do a write as a test.
+
 Then give me one table: connection, alias, result (pass, needs login, failed, not connected), and one line on what you saw.
 For anything that is not "pass", tell me the one thing I should do next. If you could not check something, say "could not check". Do not guess.
 ```
