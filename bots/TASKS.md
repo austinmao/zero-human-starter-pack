@@ -65,11 +65,11 @@ Every Life bot keeps its data in its own memory and its own `private/<folder>/` 
 
 ## Who does what (one owner per area)
 
-- **Code is the only bot that writes code or changes GitHub.** Every other bot sends code and GitHub requests to Code with the platform's agent-messaging tool (on GrokBot: SendToAgent).
+- **Code is the only bot that writes code or changes GitHub.** Every other bot sends code and GitHub requests to Code with the platform's agent-messaging tool (on OpenMausBot: `coordinate_bots`; on GrokBot: SendToAgent).
 - Email, Calendar, Task, Messaging and Drive each own one area. They do not write code and do not touch GitHub.
 - The Factory builds bots but saves their files through Code.
 - Email and Messaging each keep their own voice cards (one person, many people) and run the humanizer on every draft. Calendar runs the humanizer on invite text. The Factory gives new bots the same rule when they write text for people.
-- The Orchestrator hands work out with real messages (on GrokBot: SendToAgent), using a four-part brief, and checks the result. It does not do other bots' work. The roster is `bots/ROSTER.md`.
+- The Orchestrator hands work out with real messages (on OpenMausBot: `coordinate_bots`; on GrokBot: SendToAgent), using a four-part brief, and checks the result. It does not do other bots' work. The roster is `bots/ROSTER.md`.
 - **One owner per app with side effects, least privilege everywhere else.** The owner list is in `bots/CONNECTORS.md`. Other bots read directly, read only, and ask the owner only for a write. The table is `bots/CONNECTORS.md`.
 - **Growth (Pack A)** bots plan and draft. The Brand bot owns each brand's approved voice and facts. Analytics supplies the numbers. Nothing goes public, out or into a paid tool without my yes. Sending is Email or Messaging.
 - **Operations (Pack B)** bots prepare and check. They never move money, sign, file or delete. Legal admin reviews health, results and legal claims for the other bots.

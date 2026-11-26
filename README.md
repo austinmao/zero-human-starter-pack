@@ -41,7 +41,7 @@ Every bot can be connected to **more than one account** (for example, two Google
 
 - **Least privilege.** Each bot lists the apps it may use, read only or read and write, and which account. Default is off. These limits are set per bot in the platform's connector settings, not just written in the bot's text. A line saying "stay in your lane" is not a security boundary. See `bots/CONNECTORS.md`.
 - **One owner per app with side effects.** The owner list is in `bots/CONNECTORS.md`. Other bots read directly, read only, and ask the owner only for a write.
-- **Real messages.** The Orchestrator delegates with the platform's agent-messaging tool (on GrokBot: SendToAgent), with a brief that has a goal, limits, expected output and a "done means". It checks the result. Files are never the way a job is handed over.
+- **Real messages.** The Orchestrator delegates with the platform's agent-messaging tool (on OpenMausBot: `coordinate_bots`; on GrokBot: SendToAgent), with a brief that has a goal, limits, expected output and a "done means". It checks the result. Files are never the way a job is handed over.
 - **A roster and a test set.** `bots/ROSTER.md` groups the bots and gives each a "route here when" and a "not when" line. `bots/ROUTING-TESTS.md` is the test set to run after any change.
 
 Already built your team from an older version? Follow `GROKBOT-UPDATE.md`.
